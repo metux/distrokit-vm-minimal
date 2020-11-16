@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. ./funcs.sh || exit 1
+
+kill_qemu
