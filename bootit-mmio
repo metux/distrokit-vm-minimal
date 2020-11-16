@@ -1,0 +1,31 @@
+#!/bin/bash
+
+## NOTE: virtio-mmio currently only works when acpi is disabled
+## maybe a bug in seabios+qemu not passing through the device data ?
+## or is the kernel incapable of probing from acpi ?
+
+. ./funcs.sh || exit 1
+
+QEMU_MACHINE="microvm"
+QEMU_KVM="on"
+
+qemu_bootparm_init
+qemu_bootparm_kernel
+qemu_bootparm_bios
+
+#qemu_bootparm_rootfs_virtio
+
+ROOTFS_IMAGE=`get_rootfs_image`
+if [ "$ROOTFS_IMAGE" ]; then
+    info "using root fs image: $ROOTFS_IMAGE"
+    ROOT_DEVICE="/dev/vda"
+    PARAMS+=("-drive" "id=vda,file=$ROOTFS_IMAGE,if=none")
+    PARAMS+=("-device" "virtio-blk-device,drive=vda")
+fi
+
+PARAMS+=("-nographic")
+PARAMS+=("-no-acpi")
+PARAMS+=("-append" "root=$ROOT_DEVICE")
+PARAMS+=("-monitor" "tcp:localhost:4444,server,nowait")
+
+qemu_startup
