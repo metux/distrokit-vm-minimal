@@ -1,0 +1,16 @@
+#!/bin/bash
+
+. ./funcs.sh || exit 1
+
+QEMU_BIOS_TYPE="bios-microvm.bin"
+QEMU_KVM="on"
+
+qemu_bootparm_init
+qemu_bootparm_kernel
+qemu_bootparm_rootfs
+qemu_bootparm_bios
+
+PARAMS+=("-nographic")
+PARAMS+=("-append" "root=$QEMU_ROOT_DEVICE")
+
+qemu_startup
