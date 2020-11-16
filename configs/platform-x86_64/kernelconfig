@@ -1431,17 +1431,7 @@ CONFIG_CLKBLD_I8253=y
 CONFIG_MAILBOX=y
 CONFIG_PCC=y
 # CONFIG_ALTERA_MBOX is not set
-CONFIG_IOMMU_SUPPORT=y
-
-#
-# Generic IOMMU Pagetable Support
-#
-# end of Generic IOMMU Pagetable Support
-
-# CONFIG_IOMMU_DEBUGFS is not set
-# CONFIG_AMD_IOMMU is not set
-# CONFIG_INTEL_IOMMU is not set
-# CONFIG_IRQ_REMAP is not set
+# CONFIG_IOMMU_SUPPORT is not set
 
 #
 # Remoteproc drivers
