@@ -1,0 +1,8 @@
+
+Qemu:
+    * read gpio controller properties
+
+        qom-list /machine/peripheral-anon/device[1]/default-backend
+
+qom-get /machine/peripheral-anon/device[1]/default-backend gpio0.direction
+qom-get /machine/peripheral-anon/device[1]/default-backend gpio0.value
