@@ -2022,6 +2022,7 @@ PTXCONF_LIBKMOD_MODPROBE=y
 # PTXCONF_DBUS_GLIB is not set
 # PTXCONF_DBUS is not set
 # PTXCONF_EGGDBUS is not set
+# PTXCONF_RUNC is not set
 # end of Middleware                    
 
 #
