@@ -1244,8 +1244,7 @@ CONFIG_CLKEVT_I8253=y
 CONFIG_CLKBLD_I8253=y
 # end of Clock Source drivers
 
-CONFIG_MAILBOX=y
-# CONFIG_ALTERA_MBOX is not set
+# CONFIG_MAILBOX is not set
 # CONFIG_IOMMU_SUPPORT is not set
 
 #
@@ -1257,7 +1256,6 @@ CONFIG_MAILBOX=y
 #
 # Rpmsg drivers
 #
-# CONFIG_RPMSG_QCOM_GLINK_RPM is not set
 # CONFIG_RPMSG_VIRTIO is not set
 # end of Rpmsg drivers
 
