@@ -1788,7 +1788,7 @@ CONFIG_WQ_WATCHDOG=y
 #
 # Scheduler Debugging
 #
-CONFIG_SCHED_DEBUG=y
+# CONFIG_SCHED_DEBUG is not set
 # CONFIG_SCHEDSTATS is not set
 # end of Scheduler Debugging
 
