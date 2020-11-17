@@ -1,0 +1,11 @@
+## SECTION=middleware
+#
+# This file is just an example how to install binaries to the root filesystem
+# via ptxdist
+#
+config RUNC
+	tristate "RunC container runtime"
+	select LIBSECCOMP
+	select HOST_GPERF	# fixme: ptxdist bug in libseccomp
+	help
+	  OCI standard container runtime
