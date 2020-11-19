@@ -28,6 +28,6 @@ PARAMS+=("-nographic")
 PARAMS+=("-no-acpi")
 PARAMS+=("-append" "root=$ROOT_DEVICE")
 PARAMS+=("-monitor" "tcp:localhost:4444,server,nowait")
-PARAMS+=("-device" "virtio-gpio-device")
+PARAMS+=("-device" "virtio-gpio-device,num_gpios=12,name=vgpio1")
 
 qemu_startup
