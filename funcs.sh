@@ -23,7 +23,7 @@ build_images() {
 }
 
 kill_qemu() {
-    killall `get_qemu_cmd`
+    killall -9 `get_qemu_cmd`
 }
 
 get_qemu_cmd() {
