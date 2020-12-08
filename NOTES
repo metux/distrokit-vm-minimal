@@ -1,0 +1,8 @@
+* virtio-mmio needs acpi disabled
+* smbios/dmi tables only work w/ normal x87 machine type (not microvm)
+
+## NOTE: virtio-mmio currently only works when acpi is disabled
+## maybe a bug in seabios+qemu not passing through the device data ?
+## or is the kernel incapable of probing from acpi ?
+
+## NOTE: poweroff only works with ACPI !

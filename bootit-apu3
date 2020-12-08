@@ -1,0 +1,18 @@
+#!/bin/bash
+
+. ./funcs.sh || exit 1
+
+QEMU_KVM="on"
+
+qemu_bootparm_init
+qemu_bootparm_kernel
+qemu_bootparm_bios
+qemu_bootparm_rootfs_virtio
+
+PARAMS+=("-nographic")
+PARAMS+=("-append" "root=$QEMU_ROOT_DEVICE")
+PARAMS+=("-monitor" "tcp:localhost:4444,server,nowait")
+PARAMS+=("-smbios" "type=1,manufacturer=PC engines")
+PARAMS+=("-smbios" "type=2,product=APU3")
+
+qemu_startup
