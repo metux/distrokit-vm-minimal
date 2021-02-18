@@ -70,6 +70,8 @@ $(STATEDIR)/binary_example.targetinstall:
 	@$(call install_fixup, binary_example,AUTHOR,"Juergen Beisert <jbe@pengutronix.de>")
 	@$(call install_fixup, binary_example,DEPENDS,)
 	@$(call install_fixup, binary_example,DESCRIPTION,"A few binary example files")
+	$(call install_alternative, binary_example, 0, 0, 555, /testing.dtb)
+
 
 #
 # Install the single binary file on demand
