@@ -3,5 +3,5 @@
 . ./funcs.sh || exit 1
 
 force_rebuild kernel
-# force_rebuild host-qemu
+force_rebuild host-qemu
 build_images

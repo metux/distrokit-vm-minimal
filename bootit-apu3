@@ -3,6 +3,8 @@
 . ./funcs.sh || exit 1
 
 QEMU_KVM="on"
+#QEMU_BIOS_FILE="apu3_v4.13.0.3.rom"
+QEMU_BIOS_FILE="../apu/coreboot/build/coreboot.rom"
 
 qemu_bootparm_init
 qemu_bootparm_kernel
@@ -14,5 +16,6 @@ PARAMS+=("-append" "root=$QEMU_ROOT_DEVICE")
 PARAMS+=("-monitor" "tcp:localhost:4444,server,nowait")
 PARAMS+=("-smbios" "type=1,manufacturer=PC engines")
 PARAMS+=("-smbios" "type=2,product=APU3")
+PARAMS+=("-debugcon" "file:debug.log" "-global" "isa-debugcon.iobase=0x80")
 
 qemu_startup

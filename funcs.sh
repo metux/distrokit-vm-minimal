@@ -84,8 +84,13 @@ qemu_bootparm_bios() {
         info "using bios type: $QEMU_BIOS_TYPE"
         PARAMS+=("-bios" "$PLATFORM_DIR/sysroot-host/share/qemu/$QEMU_BIOS_TYPE")
     fi
+    if [ "$QEMU_BIOS_FILE" ]; then
+        info "using bios file: $QEMU_BIOS_FILE"
+        PARAMS+=("-bios" "$QEMU_BIOS_FILE")
+    fi
 }
 
 qemu_startup() {
+    echo "${PARAMS[@]}"
     "${PARAMS[@]}"
 }
