@@ -1358,7 +1358,7 @@ PTXCONF_BUSYBOX_LOGGER=y
 #
 # BusyBox' gunzip is selected!
 #
-PTXCONF_HTOP=y
+# PTXCONF_HTOP is not set
 # PTXCONF_HUB_CTRL is not set
 PTXCONF_HWDATA=y
 PTXCONF_HWDATA_PCI=y
