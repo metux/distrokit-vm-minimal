@@ -1,0 +1,9 @@
+## SECTION=middleware
+#
+# This file is just an example how to install binaries to the root filesystem
+# via ptxdist
+#
+config RUNC
+	bool "RunC container runtime"
+	help
+	  OCI standard container runtime
