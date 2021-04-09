@@ -1366,7 +1366,7 @@ PTXCONF_HWDATA_USB=y
 # PTXCONF_HWDATA_PNP is not set
 # PTXCONF_HWDATA_OUI is not set
 # PTXCONF_HWDATA_IAB is not set
-PTXCONF_I2C_TOOLS=y
+# PTXCONF_I2C_TOOLS is not set
 # PTXCONF_IMX_KOBS is not set
 # PTXCONF_JQ is not set
 # PTXCONF_KBD is not set
