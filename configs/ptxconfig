@@ -1955,7 +1955,7 @@ PTXCONF_UTIL_LINUX_AGETTY=y
 # PTXCONF_BOOST is not set
 # PTXCONF_CXXTOOLS is not set
 # PTXCONF_DB is not set
-PTXCONF_EXPAT=y
+# PTXCONF_EXPAT is not set
 # PTXCONF_FLEX is not set
 # PTXCONF_GETTEXT is not set
 # PTXCONF_GFLAGS is not set
