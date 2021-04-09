@@ -2100,7 +2100,7 @@ PTXCONF_PCRE2_8=y
 # PTXCONF_XERCES is not set
 # PTXCONF_XXHASH is not set
 # PTXCONF_YAJL is not set
-PTXCONF_ZLIB=y
+# PTXCONF_ZLIB is not set
 # end of System Libraries              
 
 #
