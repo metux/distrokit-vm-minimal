@@ -538,7 +538,7 @@ CONFIG_BLK_MQ_VIRTIO=y
 # IO Schedulers
 #
 # CONFIG_MQ_IOSCHED_DEADLINE is not set
-CONFIG_MQ_IOSCHED_KYBER=y
+# CONFIG_MQ_IOSCHED_KYBER is not set
 # CONFIG_IOSCHED_BFQ is not set
 # end of IO Schedulers
 
