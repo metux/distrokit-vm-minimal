@@ -319,7 +319,7 @@ CONFIG_X86_RESERVE_LOW=64
 # CONFIG_MTRR is not set
 # CONFIG_ARCH_RANDOM is not set
 # CONFIG_X86_SMAP is not set
-CONFIG_X86_UMIP=y
+# CONFIG_X86_UMIP is not set
 # CONFIG_HZ_100 is not set
 CONFIG_HZ_250=y
 # CONFIG_HZ_300 is not set
