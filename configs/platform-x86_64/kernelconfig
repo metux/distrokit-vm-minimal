@@ -1267,7 +1267,7 @@ CONFIG_HAVE_ARCH_KCSAN=y
 # end of Generic Kernel Debugging Instruments
 
 CONFIG_DEBUG_KERNEL=y
-CONFIG_DEBUG_MISC=y
+# CONFIG_DEBUG_MISC is not set
 
 #
 # Memory Debugging
