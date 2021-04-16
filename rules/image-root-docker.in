@@ -1,0 +1,19 @@
+## SECTION=image
+
+menuconfig IMAGE_ROOT_DOCKER
+	tristate
+	prompt "Generate docker rootfs image      "
+	help
+	    Build a tar.gz archive containing the root file system.
+
+if IMAGE_ROOT_DOCKER
+
+config IMAGE_ROOT_DOCKER_LABEL
+	string
+	prompt "label"
+	help
+	  This string gets expanded to form the label. An empty string produces no label.
+	  For example, this could be set to:
+	    ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}
+
+endif
