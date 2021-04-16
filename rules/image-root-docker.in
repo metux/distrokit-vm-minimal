@@ -11,9 +11,18 @@ if IMAGE_ROOT_DOCKER
 config IMAGE_ROOT_DOCKER_LABEL
 	string
 	prompt "label"
+	default "${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}"
 	help
 	  This string gets expanded to form the label. An empty string produces no label.
 	  For example, this could be set to:
+	    ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}
+
+config IMAGE_ROOT_DOCKER_MESSAGE
+	string
+	prompt "message"
+	default "ptxdist import ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}"
+	help
+	  This string gets expanded to form a message for the docker import call
 	    ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}
 
 endif
