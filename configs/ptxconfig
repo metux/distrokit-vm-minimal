@@ -139,11 +139,8 @@ PTXCONF_CROSS_PKG_CONFIG_WRAPPER=y
 #
 # gdb                           
 #
-PTXCONF_GDB_TOOLCHAIN_VERSION=y
-PTXCONF_GDB_MD5=""
 # PTXCONF_GDB is not set
-PTXCONF_GDBSERVER=y
-PTXCONF_GDBSERVER_SHARED=y
+# PTXCONF_GDBSERVER is not set
 # end of gdb                           
 
 # PTXCONF_LATRACE is not set
@@ -335,7 +332,6 @@ PTXCONF_GLIBC_LDCONFIG_RC_ONCE=y
 # end of glibc                         
 
 PTXCONF_LIBC_C=y
-PTXCONF_LIBC_THREAD_DB=y
 PTXCONF_LIBC_RT=y
 PTXCONF_LIBC_M=y
 PTXCONF_LIBC_NSS_DNS=y
