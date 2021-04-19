@@ -4,7 +4,8 @@ menuconfig IMAGE_ROOT_DOCKER
 	tristate
 	prompt "Generate docker rootfs image      "
 	help
-	    Build a tar.gz archive containing the root file system.
+	  Upload the image into a local docker instance
+	  The image will be tagged with the specified label
 
 if IMAGE_ROOT_DOCKER
 
@@ -20,9 +21,16 @@ config IMAGE_ROOT_DOCKER_LABEL
 config IMAGE_ROOT_DOCKER_MESSAGE
 	string
 	prompt "message"
-	default "ptxdist import ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}"
+	default "ptxdist auto-import: ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}"
 	help
 	  This string gets expanded to form a message for the docker import call
 	    ${PTXCONF_PROJECT_VENDOR}-${PTXCONF_PROJECT}${PTXCONF_PROJECT_VERSION}
+
+config IMAGE_ROOT_DOCKER_CMD
+	string
+	prompt "docker command"
+	default "$(DOCKER)"
+	help
+	  Specify custom docker command (eg. in case some extra args required)
 
 endif
