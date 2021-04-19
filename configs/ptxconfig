@@ -1273,41 +1273,7 @@ PTXCONF_BUSYBOX_LOGGER=y
 # PTXCONF_PCMCIAUTILS is not set
 # PTXCONF_PICOCOM is not set
 # PTXCONF_PNPUTILS is not set
-PTXCONF_PROCPS=y
-PTXCONF_PROCPS_USES_NCURSES=y
-
-#
-# busybox' free is selected!
-#
-# PTXCONF_PROCPS_PGREP is not set
-
-#
-# busybox' pidof is selected!
-#
-# PTXCONF_PROCPS_PKILL is not set
-
-#
-# busybox' pmap is selected!
-#
-PTXCONF_PROCPS_PS=y
-
-#
-# busybox' pwdx is selected!
-#
-# PTXCONF_PROCPS_SLABTOP is not set
-# PTXCONF_PROCPS_SYSCTL is not set
-PTXCONF_PROCPS_TOP=y
-# PTXCONF_PROCPS_TOP_MODERN is not set
-
-#
-# busybox' uptime is selected!
-#
-# PTXCONF_PROCPS_VMSTAT is not set
-# PTXCONF_PROCPS_W is not set
-
-#
-# busybox' watch is selected!
-#
+# PTXCONF_PROCPS is not set
 # PTXCONF_PS3_UTILS is not set
 
 #
