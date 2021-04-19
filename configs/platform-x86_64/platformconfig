@@ -114,43 +114,7 @@ PTXCONF_TARGET_EXTRA_LDFLAGS=""
 # end of extra toolchain options       
 # end of architecture                  
 
-PTXCONF_KERNEL=y
-PTXCONF_KERNEL_XPKG=y
-PTXCONF_KERNEL_INSTALL=y
-PTXCONF_KERNEL_MODULES=y
-PTXCONF_KERNEL_MODULES_INSTALL=y
-PTXCONF_KERNEL_VERSION="5.8.9"
-PTXCONF_KERNEL_MD5="4d8b8af44c9d342624c036428da09ab6"
-PTXCONF_KERNEL_IMAGE_BZ=y
-# PTXCONF_KERNEL_IMAGE_Z is not set
-# PTXCONF_KERNEL_IMAGE_XIP is not set
-# PTXCONF_KERNEL_IMAGE_U is not set
-# PTXCONF_KERNEL_IMAGE_VM is not set
-# PTXCONF_KERNEL_IMAGE_VMLINUX is not set
-# PTXCONF_KERNEL_IMAGE_VMLINUZ is not set
-# PTXCONF_KERNEL_IMAGE_RAW is not set
-# PTXCONF_KERNEL_IMAGE_SIMPLE is not set
-PTXCONF_KERNEL_IMAGE="bzImage"
-# PTXCONF_KERNEL_ZSTD is not set
-# PTXCONF_KERNEL_XZ is not set
-PTXCONF_KERNEL_LZOP=y
-# PTXCONF_KERNEL_LZ4 is not set
-# PTXCONF_KERNEL_OPENSSL is not set
-# PTXCONF_KERNEL_LIBELF is not set
-# PTXCONF_KERNEL_GCC_PLUGINS is not set
-PTXCONF_KERNEL_CONFIG_BASE_VERSION=y
-
-#
-# patching & configuration      
-#
-PTXCONF_KERNEL_SERIES="series${PTXDIST_PLATFORMSUFFIX}"
-PTXCONF_KERNEL_CONFIG="kernelconfig"
-# end of patching & configuration      
-
-#
-# Development features
-#
-PTXCONF_KERNEL_EXTRA_MAKEVARS=""
+# PTXCONF_KERNEL is not set
 # PTXCONF_DTC is not set
 # PTXCONF_HOST_DTC is not set
 
@@ -191,19 +155,6 @@ PTXCONF_BAREBOX_ARCH_STRING="x86"
 # PTXCONF_IMAGE_BOOT_VFAT is not set
 # PTXCONF_IMAGE_HD_VDI is not set
 # PTXCONF_IMAGE_HDIMG is not set
-PTXCONF_IMAGE_KERNEL=y
-
-#
-# Generate images/linuximage    
-#
-
-#
-# 'rootfs in kernel image' is incompatible with 'install kernel into /boot'
-#
-PTXCONF_IMAGE_KERNEL_INSTALL_EARLY=y
-# PTXCONF_IMAGE_KERNEL_LZOP is not set
-# end of Generate images/linuximage    
-
 # PTXCONF_IMAGE_RAUC is not set
 # PTXCONF_IMAGE_ROOT_CPIO_GZ is not set
 # PTXCONF_IMAGE_ROOT_CPIO is not set
@@ -230,7 +181,3 @@ PTXCONF_IMAGE_XPKG_EXTRA_ARGS=""
 # end of image creation options        
 
 # PTXCONF_CODE_SIGNING is not set
-PTXCONF_HOST_LIBKMOD=y
-PTXCONF_HOST_LIBLZO=y
-PTXCONF_HOST_LZOP=y
-PTXCONF_HOST_SYSTEM_BC=y
