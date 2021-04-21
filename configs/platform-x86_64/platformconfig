@@ -121,7 +121,7 @@ PTXCONF_TARGET_EXTRA_LDFLAGS=""
 #
 # console options               
 #
-PTXCONF_CONSOLE_NAME="ttyS0"
+PTXCONF_CONSOLE_NAME="console"
 PTXCONF_CONSOLE_SPEED="115200"
 # end of console options               
 
