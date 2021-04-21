@@ -37,6 +37,7 @@ ifdef PTXCONF_IMAGE_ROOT_DOCKER
 $(IMAGE_ROOT_DOCKER_IMAGE):
 	@$(call targetinfo)
 	@$(call image/archivex, IMAGE_ROOT_DOCKER)
+	@echo "$(PTXCONF_IMAGE_ROOT_DOCKER_CMD)"
 	@$(DOCKER) import --message="$(IMAGE_ROOT_DOCKER_MSG)" $(IMAGE_ROOT_DOCKER_IMAGE) "$(IMAGE_ROOT_DOCKER_LABEL)"
 	@$(call finish)
 endif
