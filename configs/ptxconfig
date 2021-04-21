@@ -284,7 +284,7 @@ PTXCONF_GCCLIBS_CXX=y
 # PTXCONF_GCCLIBS_LIBUBSAN is not set
 # end of gcc libraries                 
 
-PTXCONF_ICONV=y
+# PTXCONF_ICONV is not set
 PTXCONF_GLOBAL_IPV6=y
 # PTXCONF_KERNEL_HEADER is not set
 # PTXCONF_KERNEL is not set
