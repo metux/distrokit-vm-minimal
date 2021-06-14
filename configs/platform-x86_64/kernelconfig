@@ -845,7 +845,8 @@ CONFIG_GPIOLIB=y
 CONFIG_GPIOLIB_FASTPATH_LIMIT=512
 # CONFIG_DEBUG_GPIO is not set
 CONFIG_GPIO_SYSFS=y
-# CONFIG_GPIO_CDEV is not set
+CONFIG_GPIO_CDEV=y
+CONFIG_GPIO_CDEV_V1=y
 
 #
 # Memory mapped GPIO drivers
@@ -853,7 +854,6 @@ CONFIG_GPIO_SYSFS=y
 # CONFIG_GPIO_DWAPB is not set
 # CONFIG_GPIO_GENERIC_PLATFORM is not set
 # CONFIG_GPIO_MB86S7X is not set
-# CONFIG_GPIO_XILINX is not set
 # CONFIG_GPIO_AMD_FCH is not set
 # end of Memory mapped GPIO drivers
 
@@ -872,8 +872,14 @@ CONFIG_GPIO_SYSFS=y
 #
 # end of MFD GPIO expanders
 
+#
+# Virtual GPIO drivers
+#
 # CONFIG_GPIO_AGGREGATOR is not set
 # CONFIG_GPIO_MOCKUP is not set
+# CONFIG_GPIO_VIRTIO is not set
+# end of Virtual GPIO drivers
+
 # CONFIG_W1 is not set
 # CONFIG_POWER_RESET is not set
 # CONFIG_POWER_SUPPLY is not set
