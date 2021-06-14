@@ -156,7 +156,6 @@ HOST_QEMU_CONF_OPT	:= \
 	--disable-vvfat \
 	--disable-qed \
 	--disable-parallels \
-	--disable-sheepdog \
 	--disable-crypto-afalg \
 	--disable-capstone \
 	--disable-debug-mutex \
