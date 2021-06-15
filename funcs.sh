@@ -90,3 +90,7 @@ qemu_bootparm_bios() {
 qemu_startup() {
     ${PARAMS[@]}
 }
+
+qemu_remote_cmd() {
+    echo "$@" | netcat -q 1 localhost $QEMU_MONITOR_PORT
+}

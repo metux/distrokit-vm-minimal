@@ -1,0 +1,8 @@
+#!/bin/bash
+
+. funcs.sh
+
+qemu_remote_cmd qom-get /machine/peripheral-anon/device[1]/default-backend gpio0.direction
+qemu_remote_cmd qom-get /machine/peripheral-anon/device[1]/default-backend gpio0.value
+
+qemu_remote_cmd qom-set /machine/peripheral-anon/device[1]/default-backend gpio0.value 1
