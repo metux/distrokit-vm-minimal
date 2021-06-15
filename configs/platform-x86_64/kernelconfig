@@ -877,7 +877,7 @@ CONFIG_GPIO_CDEV_V1=y
 #
 # CONFIG_GPIO_AGGREGATOR is not set
 # CONFIG_GPIO_MOCKUP is not set
-# CONFIG_GPIO_VIRTIO is not set
+CONFIG_GPIO_VIRTIO=y
 # end of Virtual GPIO drivers
 
 # CONFIG_W1 is not set
