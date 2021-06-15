@@ -12,6 +12,7 @@ info() {
 . ./selected_platformconfig || die "cant include selected_platformconfig"
 
 PLATFORM_DIR="./platform-$PTXCONF_PLATFORM"
+QEMU_MONITOR_PORT="4444"
 
 force_rebuild() {
     info "forcing rebuild of package: $1"

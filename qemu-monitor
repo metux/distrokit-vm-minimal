@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. funcs.sh
+
+telnet localhost $QEMU_MONITOR_PORT
+
