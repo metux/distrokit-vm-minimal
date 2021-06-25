@@ -1,0 +1,6 @@
+## xSECTION=shell_and_console
+config SRVFS_TEST
+	tristate
+	prompt "srvfs test"
+	help
+	  test program for srvfs
