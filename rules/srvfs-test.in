@@ -1,0 +1,6 @@
+## SECTION=test_suites
+config SRVFS_TEST
+	tristate
+	prompt "srvfs test"
+	help
+	  test program for srvfs
