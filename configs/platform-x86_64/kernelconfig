@@ -1124,6 +1124,7 @@ CONFIG_SYSFS=y
 # CONFIG_HUGETLBFS is not set
 CONFIG_ARCH_HAS_GIGANTIC_PAGE=y
 # CONFIG_CONFIGFS_FS is not set
+CONFIG_SRV_FS=y
 # end of Pseudo filesystems
 
 # CONFIG_MISC_FILESYSTEMS is not set
