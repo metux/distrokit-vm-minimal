@@ -1405,6 +1405,7 @@ PTXCONF_BUSYBOX_FEATURE_KMSG_SYSLOG=y
 # BusyBox' loginutils selected!
 #
 # PTXCONF_SMARTMONTOOLS is not set
+PTXCONF_SRVFS_TEST=y
 # PTXCONF_STM32FLASH is not set
 # PTXCONF_SUDO is not set
 

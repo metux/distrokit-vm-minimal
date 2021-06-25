@@ -1,4 +1,4 @@
-## xSECTION=shell_and_console
+## SECTION=test_suites
 config SRVFS_TEST
 	tristate
 	prompt "srvfs test"
