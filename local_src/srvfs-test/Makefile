@@ -13,3 +13,4 @@ clean:
 install: $(BINARIES)
 	mkdir -p $(DESTDIR)/usr/bin
 	cp $(BINARIES) $(DESTDIR)/usr/bin
+	cp init-srvfs $(DESTDIR)/usr/bin

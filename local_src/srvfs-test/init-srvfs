@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mkdir /run/srv
+mount none /run/srv -t srvfs
+echo "hello world" > /run/butterbrot
+test-localfile /run/srv /run/butterbrot
+cat /run/srv/test-localfile

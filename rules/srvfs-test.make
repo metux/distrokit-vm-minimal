@@ -53,11 +53,7 @@ $(STATEDIR)/srvfs-test.targetinstall:
 	@$(call install_fixup, srvfs-test,DESCRIPTION,missing)
 
 	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/bin/test-localfile)
-#	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/sbin/i2cdump)
-#	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/sbin/i2cset)
-#	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/sbin/i2cget)
-#	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/sbin/i2ctransfer)
-#	@$(call install_lib, srvfs-test, 0, 0, 0644, libi2c)
+	@$(call install_copy, srvfs-test, 0, 0, 0755, -, /usr/bin/init-srvfs)
 
 	@$(call install_finish, srvfs-test)
 
