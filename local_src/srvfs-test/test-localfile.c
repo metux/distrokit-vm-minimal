@@ -19,7 +19,7 @@ int doit(const char* srvfs, const char* fn)
 int main(int argc, char *argv[])
 {
 	if (argc<2)
-		fail("parameters: <srvfs> <localfile");
+		fail("parameters: <srvfs> <localfile>");
 
 	doit(argv[1], argv[2]);
 }

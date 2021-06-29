@@ -11,5 +11,5 @@ clean:
 	rm -f $(BINARIES) *.o
 
 install: $(BINARIES)
-	mkdir $(DESTDIR)/usr/bin
+	mkdir -p $(DESTDIR)/usr/bin
 	cp $(BINARIES) $(DESTDIR)/usr/bin
