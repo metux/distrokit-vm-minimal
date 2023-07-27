@@ -22,7 +22,7 @@ index 0d6f435af1ed..08d8b27863a8 100755
 -FAKEROOT_PREFIX=@prefix@
 -FAKEROOT_BINDIR=@bindir@
 +FAKEROOT_BINDIR="`dirname "$0"`"
-+FAKEROOT_PREFIX="`dirname "$FAKEROOT_BINDIR"`"
++FAKEROOT_PREFIX="$(dirname $(dirname "$FAKEROOT_BINDIR"))"
  
  USEABSLIBPATH=@LDPRELOADABS@
  FAKEROOT_LIB=lib@fakeroot_transformed@@DLSUFFIX@
