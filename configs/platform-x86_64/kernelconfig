@@ -877,7 +877,7 @@ CONFIG_HW_RANDOM_VIRTIO=y
 # CONFIG_MWAVE is not set
 # CONFIG_DEVMEM is not set
 # CONFIG_NVRAM is not set
-CONFIG_DEVPORT=y
+# CONFIG_DEVPORT is not set
 # CONFIG_HANGCHECK_TIMER is not set
 # CONFIG_TCG_TPM is not set
 # CONFIG_TELCLOCK is not set
